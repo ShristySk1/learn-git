@@ -1,0 +1,81 @@
+<div class="col-md-9">
+
+  <div class="back">
+
+    <h2 class="background">Step 1)  Push your all files into github as normal</h2>
+    <div class="comment">
+
+        In this lesson I will tell you how to how to <strong>deploy</strong> your angular project in github pages and
+        view as a client
+
+      Firstly, create a new repository. Make it <strong>public</strong>
+
+    </div>
+    <div class="comment">
+
+      Now open git bash inside the folder you had all of the files which you want to make remote.
+      <div class="chead">
+        Initialize local git repository
+
+      </div>
+      <div class="ctail">
+        git init
+      </div>
+
+
+
+
+      <div class="chead">Add remote repository URL to local(angular-one = sample git repository name in my case)</div>
+
+
+      <div class="ctail ctailnext">
+
+        git remote add origin https://github.com /ShristySk1/angular-one.git
+      </div>
+
+
+      <div class="chead">Add all files in the local git repository (You must consider the space after add)
+      </div>
+
+      <div class="ctail">
+
+        git add .</div>
+
+
+      <div class="chead">Commit to the local machine
+
+      </div>
+
+      <div class="ctail">git commit -m "Initial commit"</div>
+
+
+      <div class="chead">Push into the remote repository</div>
+
+      <div class="ctail">git push -u origin master </div>
+    </div>
+  </div>
+<h2 class="background">Step 2)  Now Deploying in server(We do these in gitbash or internaL terminal of visual studio code where we wrote our code)</h2>
+<div class="chead">now in git bash or internal terminal of visual studio code, write the code as below
+
+  </div>
+  <div class="ctail"> npm install -g angular-cli-ghpages</div>
+  <div class="chead">For generating a dist folder for production</div>
+  <div class="ctail">ng build --prod --base-href "https://shristysk1.github.io/angular-one/"</div>
+  <div class="chead">Now upload the files and folders inside dist created</div>
+  <div class="ctail">ngh --dir dist/clientxx</div>
+  <div class="comment">in my case there was subfolder clientxx so i have to go inside it at last otherwise---> ngh --dir/dist</div>
+  <div class="comment"><strong>PS: Repository in github must be public</strong></div>
+
+</div>
+<div class="col-md-3">
+  <div class="row">
+    <div style="background: whitesmoke;padding: 10px;border-radius: 5px;">
+      <a style="text-decoration: none;cursor: pointer;" [routerLink]="['/aboutme']">About Me</a>
+    </div>
+  </div>
+
+
+  <router-outlet></router-outlet>
+
+
+</div>

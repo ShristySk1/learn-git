@@ -1,0 +1,49 @@
+
+.hed{
+  color: whitesmoke;
+  opacity: 0.7;
+  padding-left: 13%;
+
+  }
+
+  @media screen and (max-width:522px){
+    .hed{
+  font-size:70px;
+      }
+
+  }
+
+  @media screen and (max-width:379px){
+    .hed{
+  font-size:45px;
+      }
+
+  }
+
+.head{
+  text-align: center;
+  font-family:sans-serif;
+  border-radius: 10px;
+  font-size: 40px;
+}
+.font{
+  font-family:serif;
+  font-size: 100px;
+}
+.body{
+  background-color:gainsboro;
+}
+
+.topheading{
+background-image: url('./../assets/img/head1.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+
+line-height: 200px;
+
+
+}
+
+

@@ -1,0 +1,73 @@
+<div class="col-md-9">
+
+  <div class="back">
+    <div class="comment">
+Firstly, create a new repository. Make it private or public according to your choice.
+You will get into this kind of screen like below:
+      <div class="outerimage">
+<div class="image">
+<a href="assets/img/1.png"><img src="assets/img/1.png" width=100% style="object-fit:scale-down;">
+</a></div>
+      </div></div>
+<div class="comment">
+
+Now open git bash inside the folder you had all of the files which you want to make remote.
+<div class="chead">
+    Initialize local git repository
+
+</div>
+<div class="ctail">
+  git init
+</div>
+
+
+
+
+<div class="chead">Add remote repository URL to local</div>
+
+
+<div class="ctail ctailnext">
+
+git remote add origin https://github.com /ShristySk1/test.git
+  </div>
+
+
+  <div class="chead">Add all files in the local git repository (You must consider the space after add)
+</div>
+
+<div class="ctail">
+
+  git add .</div>
+
+
+<div class="chead">Commit to the local machine
+
+</div>
+
+<div class="ctail">git commit -m "Initial commit"</div>
+
+
+<div class="chead">Push into the remote repository</div>
+
+<div class="ctail">git push -u origin master	</div>
+    </div>
+<div class="outerimage">
+<div class="image">
+<a href="assets/img/2.png"><img src="assets/img/2.png"  width=100% style="object-fit:scale-down;">
+</a>	</div>
+    </div></div>
+
+
+</div>
+<div class="col-md-3">
+   <div class="row">
+      <div style="background: whitesmoke;padding: 10px;border-radius: 5px;">
+          <a style="text-decoration: none;cursor: pointer;" [routerLink]="['/aboutme']">About Me</a>
+    </div>
+   </div>
+
+
+  <router-outlet></router-outlet>
+
+
+</div>

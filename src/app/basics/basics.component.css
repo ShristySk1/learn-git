@@ -1,0 +1,32 @@
+.back{
+  background: whitesmoke;padding: 10px;border-radius: 5px;
+}
+.outerimage{
+padding: 15px;
+}
+.image{
+padding: 10px;
+box-shadow: 0px 0px 5px;
+}
+.chead{
+padding-top: 20px;
+font-weight: 800;
+font-size: 20px;
+}
+.ctail{
+font-family: monospace;
+font-style: italic;
+padding: 10px;
+display: flex;
+}
+.comment{
+padding: 20px;
+}
+
+
+@media screen and (max-width:200px){
+  .ctailnext{
+white-space: pre;
+    }
+
+}

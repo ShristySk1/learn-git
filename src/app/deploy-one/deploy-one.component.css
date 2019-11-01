@@ -1,0 +1,28 @@
+.chead{
+  padding-top: 20px;
+  font-weight: 800;
+  font-size: 20px;
+  }
+  .ctail{
+  font-family: monospace;
+  font-style: italic;
+  padding: 10px;
+  display: flex;
+  }
+  .comment{
+  padding: 20px;
+  }
+.background{
+  background-color:#171717;
+  color: white;
+  opacity: 0.8;
+  padding:20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media screen and (max-width:200px){
+  .ctailnext{
+white-space: pre;
+    }
+
+}
